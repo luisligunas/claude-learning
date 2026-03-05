@@ -1,10 +1,17 @@
 <script setup>
-import { ref } from 'vue'
+import { ref, computed } from 'vue'
 
 const props = defineProps({
   src: String,
   title: String,
   description: String,
+})
+
+const resolvedSrc = computed(() => {
+  if (!props.src) return ''
+  const base = import.meta.env.BASE_URL
+  if (props.src.startsWith(base)) return props.src
+  return base + props.src.replace(/^\//, '')
 })
 
 const videoRef = ref(null)
@@ -40,7 +47,7 @@ function onError() {
     <div class="video-wrapper">
       <video
         ref="videoRef"
-        :src="src"
+        :src="resolvedSrc"
         :title="title"
         controls
         preload="metadata"

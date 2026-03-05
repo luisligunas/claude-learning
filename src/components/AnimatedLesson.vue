@@ -549,6 +549,8 @@ watch(currentSlide, () => {
   position: relative;
   z-index: 1;
   animation: slideIn 0.5s ease;
+  overflow-y: auto;
+  min-height: 0;
 }
 
 @keyframes slideIn {
@@ -658,6 +660,8 @@ watch(currentSlide, () => {
 .step-text-area {
   flex: 1;
   min-width: 0;
+  overflow-y: auto;
+  max-height: 100%;
 }
 
 .step-title-large {
