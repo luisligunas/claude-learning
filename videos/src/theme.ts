@@ -1,0 +1,27 @@
+export const theme = {
+  colors: {
+    bgPage: "#f0ebe3",
+    bgCard: "#ffffff",
+    bgDark: "#1a1a2e",
+    accent: "#f5a623",
+    accentLight: "#fef3d9",
+    accentDark: "#d4891a",
+    textPrimary: "#1a1a2e",
+    textSecondary: "#6b7280",
+    textMuted: "#9ca3af",
+    white: "#ffffff",
+    green: "#10b981",
+    blue: "#3b82f6",
+    purple: "#7B68EE",
+    pink: "#E056A0",
+    red: "#FF6B6B",
+    teal: "#4ECDC4",
+  },
+  fonts: {
+    main: "Inter, -apple-system, BlinkMacSystemFont, sans-serif",
+    mono: "'SF Mono', 'Fira Code', 'Cascadia Code', monospace",
+  },
+  fps: 30,
+  width: 1920,
+  height: 1080,
+} as const;
