@@ -20,6 +20,22 @@ const lessons = [
   "prompt-basics",
   "skills-overview",
   "mcp-intro",
+  "artifacts-intro",
+  "projects-intro",
+  "claude-code-engineering",
+  "claude-code-context",
+  "claude-code-ai-workflow",
+  "extended-thinking",
+  "prompt-design-to-code",
+  "skills-create",
+  "skills-advanced",
+  "subagents-overview",
+  "subagents-create",
+  "subagents-advanced",
+  "skills-subagents-together",
+  "hooks-guide",
+  "plugins-system",
+  "claude-md-mastery",
 ];
 
 console.log("=== Syncing scene durations to audio lengths ===\n");

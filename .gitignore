@@ -6,3 +6,4 @@ dist/
 # Remotion sub-project
 videos/node_modules/
 videos/dist/
+.vite/
