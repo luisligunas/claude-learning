@@ -92,12 +92,13 @@ function goBack() {
 
         <div v-if="course.externalUrl" class="external-video-notice">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="var(--accent)" stroke-width="2">
-            <polygon points="5 3 19 12 5 21 5 3" />
+            <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z" />
+            <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z" />
           </svg>
           <div>
-            <p class="notice-title">Additional video on the official site</p>
+            <p class="notice-title">Official documentation</p>
             <a :href="course.externalUrl" target="_blank" class="notice-link">
-              Open Video Tutorial
+              Read more on the official site
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3" />
               </svg>
